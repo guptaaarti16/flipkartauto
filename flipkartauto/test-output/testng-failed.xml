@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="nodeurl" value="http://localhost:4444/wd/hub"/>
+  <parameter name="browserName" value="firefox"/>
+  <test name="Testfirefox(failed)" parallel="tests">
+    <parameter name="nodeurl" value="http://localhost:4444/wd/hub"/>
+    <parameter name="browserName" value="firefox"/>
+    <classes>
+      <class name="package1.automateFilpkart">
+        <methods>
+          <include name="testGrid" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- package1.automateFilpkart -->
+    </classes>
+  </test> <!-- Testfirefox(failed) -->
+  <test name="Testchrome(failed)" parallel="tests">
+    <parameter name="nodeurl" value="http://localhost:4444/wd/hub"/>
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="package1.automateFilpkart">
+        <methods>
+          <include name="testGrid" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- package1.automateFilpkart -->
+    </classes>
+  </test> <!-- Testchrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->
